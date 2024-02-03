@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/mainMenu">
+
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.example.renato_hack_dr1_at.Menu.Fragments.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenu_to_menuJogadores"
+            app:destination="@id/menuJogadores"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenu_to_sobreFragment"
+            app:destination="@id/sobreFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainMenu_to_pontuacaoFragment"
+            app:destination="@id/pontuacaoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuJogadores"
+        android:name="com.example.renato_hack_dr1_at.Menu.Fragments.MenuJogadoresFragment"
+        android:label="fragment_menu_jogadores"
+        tools:layout="@layout/fragment_menu_jogadores" />
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="com.example.renato_hack_dr1_at.Menu.Fragments.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/pontuacaoFragment"
+        android:name="com.example.renato_hack_dr1_at.Menu.Fragments.PontuacaoFragment"
+        android:label="fragment_pontuacao"
+        tools:layout="@layout/fragment_pontuacao" />
+</navigation>

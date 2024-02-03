@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181454838233",
+    "project_id": "minhas-compras-10fd4",
+    "storage_bucket": "minhas-compras-10fd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181454838233:android:d55d22852fbfd4a3dda1c8",
+        "android_client_info": {
+          "package_name": "renatohack.minhascompras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181454838233-347kdeirlpq3gmq6soj2ikm71a6nk6og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCz-y6gbtVLlOtGMQsqrXPUZc48PLJ6yA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181454838233-347kdeirlpq3gmq6soj2ikm71a6nk6og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

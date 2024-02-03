@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.Login.Entrar.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaPrincipalFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.TelaPrincipal.TelaPrincipalFragment"
+        android:label="tela_principal_fragment"
+        tools:layout="@layout/tela_principal_fragment" >
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_listagemFragment"
+            app:destination="@id/listagemFragment" />
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_cadastroAnotacaoFragment"
+            app:destination="@id/cadastroAnotacaoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.Login.Cadastro.CadastroFragment"
+        android:label="cadastro_fragment"
+        tools:layout="@layout/cadastro_fragment" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listagemFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.ListagemAnotacao.ListagemFragment"
+        android:label="listagem_fragment"
+        tools:layout="@layout/listagem_fragment" >
+        <action
+            android:id="@+id/action_listagemFragment_to_detalhesAnotacaoFragment"
+            app:destination="@id/detalhesAnotacaoFragment" />
+        <action
+            android:id="@+id/action_listagemFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroAnotacaoFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.CadastroAnotacao.CadastroAnotacaoFragment"
+        android:label="cadastro_anotacao_fragment"
+        tools:layout="@layout/cadastro_anotacao_fragment" />
+    <fragment
+        android:id="@+id/detalhesAnotacaoFragment"
+        android:name="com.renatohack.renato_hack_dr4_at.DealhesAnotacao.DetalhesAnotacaoFragment"
+        android:label="detalhes_anotacao_fragment"
+        tools:layout="@layout/detalhes_anotacao_fragment" />
+</navigation>

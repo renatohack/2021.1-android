@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/informacoesPessoaisFragment"
+        android:title="Informações Pessoais" />
+    <item
+        android:id="@+id/formacaoFragment"
+        android:title="Formação" />
+    <item
+        android:id="@+id/expProfissionalFragment"
+        android:title="Experiência Profissional" />
+    <item
+        android:id="@+id/cursosFragment"
+        android:title="Cursos" />
+    <item
+        android:id="@+id/publicacoesFragment"
+        android:title="Publicações" />
+</menu>

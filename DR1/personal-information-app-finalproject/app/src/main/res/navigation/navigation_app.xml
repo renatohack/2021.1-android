@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_app"
+    app:startDestination="@id/questao2Fragment">
+
+    <fragment
+        android:id="@+id/informacoesPessoaisFragment"
+        android:name="com.example.renato_hack_dr2_at.InformacoesPessoaisFragment"
+        android:label="fragment_informacoes_pessoais"
+        tools:layout="@layout/fragment_informacoes_pessoais" />
+    <fragment
+        android:id="@+id/formacaoFragment"
+        android:name="com.example.renato_hack_dr2_at.FormacaoFragment"
+        android:label="fragment_formacao"
+        tools:layout="@layout/fragment_formacao" />
+    <fragment
+        android:id="@+id/expProfissionalFragment"
+        android:name="com.example.renato_hack_dr2_at.ExpProfissionalFragment"
+        android:label="fragment_exp_profissional"
+        tools:layout="@layout/fragment_exp_profissional" />
+    <fragment
+        android:id="@+id/cursosFragment"
+        android:name="com.example.renato_hack_dr2_at.CursosFragment"
+        android:label="fragment_cursos"
+        tools:layout="@layout/fragment_cursos" />
+    <fragment
+        android:id="@+id/publicacoesFragment"
+        android:name="com.example.renato_hack_dr2_at.PublicacoesFragment"
+        android:label="fragment_publicacoes"
+        tools:layout="@layout/fragment_publicacoes" />
+    <fragment
+        android:id="@+id/questao2Fragment"
+        android:name="com.example.renato_hack_dr2_at.Questao2Fragment"
+        android:label="fragment_questao2"
+        tools:layout="@layout/fragment_questao2" />
+</navigation>

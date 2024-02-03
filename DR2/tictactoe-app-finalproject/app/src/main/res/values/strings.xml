@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Renato_Hack_DR1_AT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sobre">Este presente jogo, conhecido como <i><b>jogo da velha</b></i>, foi desenvolvido pelo aluno Renato Hack
+    como trabalho final para o Assessment Test da disciplina Fundamentos do Desenvolvimento Android.
+
+    \n\nPara iniciar o jogo, coloca-se o nome de dois jogadores, que jogarão um contra o outro. Cada jogador tem a opção de desistir
+    da rodada e começar uma nova, limpando o tabuleiro. Ao fazer isso, é registrado uma derrota para o jogador desistente e uma vitória para o outro
+        no placar ao lado dos nomes.
+
+    \n\nAo término do jogo, caso um dos jogadores tenha ganhado, este recebe uma vitória e o perdedor uma derrota, e uma tela
+        fornece a opção de jogar novamente. Caso o jogo dê "velha" (empate), o placar não é alterado e a opção de jogar novamente
+    também aparece.
+
+    \n\nCaso os jogadores queiram trocar os nomes, basta clicar no botão de "voltar" do dispositivo.</string>
+
+    <string name="o_jogo_deu_velha">O JOGO DEU VELHA!</string>
+    <string name="jogar_novamente">Jogar Novamente</string>
+    <string name="vitorias">Vitórias:</string>
+    <string name="derrotas">Derrotas:</string>
+    <string name="desistir">desistir</string>
+    <string name="jogo_da_velha">JOGO DA VELHA</string>
+    <string name="jogar">Jogar</string>
+    <string name="sobre_este_jogo">Sobre este jogo</string>
+    <string name="ver_pontuacoes">Ver pontuações</string>
+    <string name="jogador_1">Jogador 1</string>
+    <string name="jogador_2">Jogador 2</string>
+    <string name="comecar">Começar</string>
+    <string name="e_o_ganhador_eh">E O GANHADOR É ...</string>
+    <string name="salvar_placar">Salvar placar</string>
+    <string name="como_jogar">Como jogar</string>
+    <string name="pontuacao">Pontuação</string>
+</resources>

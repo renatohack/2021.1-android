@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Minhas Compras</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="fazer_nova_lista">Fazer nova lista</string>
+    <string name="listas_de_compras_em_aberto">Listas de compras em aberto</string>
+    <string name="compras_realizadas">Compras realizadas</string>
+    <string name="nome_da_lista">Nome da lista</string>
+    <string name="listas_em_aberto">Listas em aberto</string>
+    <string name="o_que_voce_deseja_fazer">O que você deseja fazer?</string>
+    <string name="criar_nova_lista">Criar nova lista</string>
+    <string name="item">Item:</string>
+    <string name="qtd">Qtd. :</string>
+    <string name="preco_rs">Preço: R$</string>
+    <string name="total_rs">Total: R$</string>
+    <string name="salvar_lista">Salvar Lista</string>
+    <string name="lista">Lista:</string>
+    <string name="salvar_listas_em_arquivo_texto">Salvar Listas Em Arquivo Texto</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="repetir_senha">Repetir senha</string>
+    <string-array name="quantidade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="facebook_app_id">323254855871288</string>
+    <string name="fb_login_protocol_scheme">fb323254855871288</string>
+    <string name="cx">339c677b391e62a6f</string>
+    <string name="APIkey">AIzaSyBCz-y6gbtVLlOtGMQsqrXPUZc48PLJ6yA</string>
+    <string name="logout">Logout</string>
+
+</resources>

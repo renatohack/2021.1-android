@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_game"
+    app:startDestination="@id/espacoJogoFragment">
+
+    <fragment
+        android:id="@+id/espacoJogoFragment"
+        android:name="com.example.renato_hack_dr1_at.Game.Fragments.EspacoJogoFragment"
+        android:label="fragment_espaco_jogo"
+        tools:layout="@layout/fragment_espaco_jogo" >
+        <action
+            android:id="@+id/action_espacoJogoFragment_to_resultadoJogoFragment"
+            app:destination="@id/resultadoJogoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/app_navigation_game"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_espacoJogoFragment_to_deuVelhaFragment"
+            app:destination="@id/deuVelhaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/app_navigation_game"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoJogoFragment"
+        android:name="com.example.renato_hack_dr1_at.Game.Fragments.ResultadoJogoFragment"
+        android:label="fragment_resultado_jogo"
+        tools:layout="@layout/fragment_resultado_jogo" >
+        <argument
+            android:name="jogadorAtual"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultadoJogoFragment_to_espacoJogoFragment"
+            app:destination="@id/espacoJogoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/app_navigation_game"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/deuVelhaFragment"
+        android:name="com.example.renato_hack_dr1_at.Game.Fragments.DeuVelhaFragment"
+        android:label="fragment_deu_velha"
+        tools:layout="@layout/fragment_deu_velha" >
+        <action
+            android:id="@+id/action_deuVelhaFragment_to_espacoJogoFragment"
+            app:destination="@id/espacoJogoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/app_navigation_game"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

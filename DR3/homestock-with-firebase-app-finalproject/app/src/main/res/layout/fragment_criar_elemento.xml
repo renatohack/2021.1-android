@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarElemento.CriarElemento">
+
+    <EditText
+        android:id="@+id/editTextItemCriarElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Item"
+        android:inputType="textPersonName|textCapCharacters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPrecoCriarElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/spinnerQuantidadeCriarElemento"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerQuantidadeCriarElemento" />
+
+    <Button
+        android:id="@+id/buttonSalvarItemCriarElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Salvar Item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalcularTotalCriarElemento"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalCriarElemento" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/preco_rs"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrecoCriarElemento"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrecoCriarElemento" />
+
+    <TextView
+        android:id="@+id/textViewTotalCriarElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        tools:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spinnerQuantidadeCriarElemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/quantidade"
+        app:layout_constraintEnd_toEndOf="@+id/editTextItemCriarElemento"
+        app:layout_constraintStart_toStartOf="@+id/editTextItemCriarElemento"
+        app:layout_constraintTop_toBottomOf="@+id/editTextItemCriarElemento" />
+
+    <Button
+        android:id="@+id/buttonCalcularTotalCriarElemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular total"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSalvarItemCriarElemento"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSalvarItemCriarElemento"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonSalvarItemCriarElemento" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

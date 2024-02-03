@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="renatohack.minhascompras.Login.Entrar.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_cadastrarFragment"
+            app:destination="@id/cadastrarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaPrincipalFragment"
+        android:name="renatohack.minhascompras.TelaPrincipal.TelaPrincipalFragment"
+        android:label="fragment_tela_principal"
+        tools:layout="@layout/fragment_tela_principal" >
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_fazerNovaLista"
+            app:destination="@id/fazerNovaLista" />
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_listasAbertas"
+            app:destination="@id/listasAbertas" />
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_comprasRealizadas"
+            app:destination="@id/comprasRealizadas" />
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fazerNovaLista"
+        android:name="renatohack.minhascompras.NovaLista.FazerNovaLista"
+        android:label="fragment_fazer_nova_lista"
+        tools:layout="@layout/fragment_fazer_nova_lista" >
+        <action
+            android:id="@+id/action_fazerNovaLista_to_criarElemento"
+            app:destination="@id/criarElemento" />
+        <action
+            android:id="@+id/action_fazerNovaLista_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listasAbertas"
+        android:name="renatohack.minhascompras.ListasAbertas.ListasAbertas"
+        android:label="fragment_listas_abertas"
+        tools:layout="@layout/fragment_listas_abertas" >
+        <action
+            android:id="@+id/action_listasAbertas_to_elementosDaListaAberta"
+            app:destination="@id/elementosDaListaAberta" />
+    </fragment>
+    <fragment
+        android:id="@+id/comprasRealizadas"
+        android:name="renatohack.minhascompras.ComprasRealizadas.ComprasRealizadas"
+        android:label="fragment_compras_realizadas"
+        tools:layout="@layout/fragment_compras_realizadas" />
+    <fragment
+        android:id="@+id/criarElemento"
+        android:name="renatohack.minhascompras.CriarElemento.CriarElemento"
+        android:label="fragment_criar_elemento"
+        tools:layout="@layout/fragment_criar_elemento" >
+        <action
+            android:id="@+id/action_criarElemento_to_fazerNovaLista"
+            app:destination="@id/fazerNovaLista"
+            app:popUpTo="@id/telaPrincipalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elementosDaListaAberta"
+        android:name="renatohack.minhascompras.ElementosDaListaAberta.ElementosDaListaAberta"
+        android:label="fragment_elementos_da_lista_aberta"
+        tools:layout="@layout/fragment_elementos_da_lista_aberta" />
+    <fragment
+        android:id="@+id/cadastrarFragment"
+        android:name="renatohack.minhascompras.Login.Cadastrar.CadastrarFragment"
+        android:label="CadastrarFragment" >
+        <action
+            android:id="@+id/action_cadastrarFragment_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment" />
+    </fragment>
+</navigation>

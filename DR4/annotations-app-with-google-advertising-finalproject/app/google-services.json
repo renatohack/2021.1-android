@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198952466407",
+    "project_id": "renato-hack-dr4-at-5c7fe",
+    "storage_bucket": "renato-hack-dr4-at-5c7fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198952466407:android:71447eaa6920f99ee16f42",
+        "android_client_info": {
+          "package_name": "com.renatohack.renato_hack_dr4_at"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198952466407-ok00jrd4sei2bmkoem2roib6ko96l383.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKcLhquRELlnZUP3dY0LB9qOidRkyvaCs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198952466407-ok00jrd4sei2bmkoem2roib6ko96l383.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

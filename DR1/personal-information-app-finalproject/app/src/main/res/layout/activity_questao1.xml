@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Questao1Activity">
+
+    <TextView
+        android:id="@+id/header_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Questão 1"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subheader_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Formulário com acessibilidade"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/header_TextView"
+        app:layout_constraintTop_toBottomOf="@+id/header_TextView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#000000"
+        android:hint="Nome"
+        android:textColorHint="#000000"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subheader_textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/endereco_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Endereço"
+        android:textColorHint="#000000"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/nome_textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/nome_textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/nome_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/endereco_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress|textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/estado_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Estado"
+        android:textColorHint="#000000"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/endereco_textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/endereco_textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/endereco_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/estado_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cidade_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Cidade"
+        android:textColorHint="#000000"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/estado_textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/estado_textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/estado_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cidade_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/telefone_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Telefone"
+        android:textColorHint="#000000"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/cidade_textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/cidade_textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/cidade_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefone_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:textColorHint="#000000"
+        app:hintTextColor="#070707"
+        app:layout_constraintEnd_toEndOf="@+id/telefone_textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/telefone_textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/telefone_textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_questao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Ir para Questão 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_altocontraste" />
+
+    <Button
+        android:id="@+id/button_altocontraste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Mudar contraste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_textInputLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
